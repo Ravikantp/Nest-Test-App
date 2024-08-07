@@ -32,7 +32,7 @@ export class UsersService {
   async findAll(): Promise<USER_MAS[]> {
     const records = this.usersRepositry.uSER_MAS.findMany();
     if ((await records).length > 0) { return records }
-    throw new NotFoundException("Records Not Found");
+    throw new NotFoundException("data Not Found");
   }
 
   async findOne(SEQ_NO: number): Promise<USER_MAS> {
