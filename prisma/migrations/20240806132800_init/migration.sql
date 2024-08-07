@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "USER_MAS" ADD COLUMN     "TOKEN" TEXT;
